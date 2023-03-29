@@ -28,3 +28,18 @@ function round(computerSelection, playerSelection){
         playerScore++
     }
 };
+
+for (let i=1; i<=5; i++){
+    round(getComputerChoice(),playerHand);
+    console.log(playerScore)
+    console.log(computerScore)
+    if (playerScore === 3){
+        alert('player win')
+        break
+    }else if(computerScore === 3){
+        alert('computer win')
+        break
+    }
+    playerHand = prompt('What is Your hand? please input Text!').toLowerCase();
+
+}
